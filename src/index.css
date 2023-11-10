@@ -1,13 +1,102 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.item-between {
+  justify-content: space-between;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.wrapper-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 86%;
+  font-size: 1rem;
+  padding: 20px 0;
+  font-weight: 400;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: rgba(1, 1, 3, 0.5);
+}
+.wrapper-menu .right-menu li {
+  margin-left: 75px;
+  cursor: pointer;
+}
+.wrapper-menu .right-menu li a {
+  text-decoration: none;
+  color: #444;
+}
+.form {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-form {
+  min-width: 300px;
+  outline: none;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.25;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.cta-link {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+.container {
+  padding: 0 7% 8rem;
+  margin: 0 auto;
+  min-width: 1024px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.card {
+  text-align: start;
+  padding: 1rem 4rem;
+  border: 1px solid gray;
+  color: var(--hover-color);
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  margin: 1.4rem 1rem;
+}
+.btn {
+  background-color: blue;
+  color: white;
+  border-color: blue;
+  padding: 0.5rem 2rem;
+  font-family: 'Popppins', sans-serif;
 }
